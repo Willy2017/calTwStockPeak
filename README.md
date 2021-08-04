@@ -18,13 +18,21 @@ g++ main.cpp stockDataHandler.cpp -o output -lcurl -lpthread
 https://www.twse.com.tw/zh/page/trading/indices/MI_5MINS_HIST.html
 
 執行範例:
+
+
 input:
+
 2
+
 2021 8 4
+
 2021 8 3
 
+
 output:
+
 78.9297
+
 97.5605
 
 註1: 因為需要發http request取得資料來源，必須確保對外網路可以正常連線
