@@ -17,8 +17,7 @@ g++ main.cpp stockDataHandler.cpp -o output -lcurl -lpthread
 台灣加權指數資料來源:
 https://www.twse.com.tw/zh/page/trading/indices/MI_5MINS_HIST.html
 
-執行範例:
-
+## 執行範例:
 
 input:
 
@@ -35,11 +34,8 @@ output:
 
 97.5605
 
-註1: 因為需要發http request取得資料來源，必須確保對外網路可以正常連線
-
-註2: 查無資料的日期不會顯示資料在上面
-
-註3: 附有output上帶日期的版本，在編譯時加入define WITHDATE即可顯示 (-DWITHDATE)
-
-註4: 最高值與最低值的區間，因為output的資料是浮點數，可能有部分日期查詢資料區間有極小的誤差(0.001)
-這邊暫時不處理這個部分，僅先用內建的浮點數相減
+## 備註
+- 因為需要發http request取得資料來源，必須確保對外網路可以正常連線
+- 查無資料的日期不會顯示資料在上面
+- 附有output上帶日期的版本，在編譯時加入define WITHDATE即可顯示 (-DWITHDATE)
+- 最高值與最低值的區間，因為output的資料是浮點數，可能有部分日期查詢資料區間有極小的誤差(0.001)，這邊暫時不處理這個部分，僅先用內建的浮點數相減
