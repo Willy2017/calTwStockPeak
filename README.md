@@ -1,9 +1,9 @@
 # calTwStockPeak
 計算台灣股市指定日期加權指數的最低與最高差值
 
-使用到以下3rd library
-libcurl
-rapidjson
+### 使用到以下3rd library
+- libcurl
+- rapidjson
 
 如果沒有安裝，ubuntu系列系統安裝指令如下:
 ```
