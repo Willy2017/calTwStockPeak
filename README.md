@@ -6,12 +6,16 @@ libcurl
 rapidjson
 
 如果沒有安裝，ubuntu系列系統安裝指令如下:
+```
 apt-get install libcurl4-openssl-dev   (CentOS系列可能是yum install curl-devel)
 apt-get install -y rapidjson-dev
+```
 
 編譯時需要link curl 與thread
 編譯指令如下:(以g++為範例，如使用其他方式編譯如CMAKE要額外設定參數)
+```
 g++ main.cpp stockDataHandler.cpp -o output -lcurl -lpthread
+```
 
 歷史資料來源使用台灣加權指數
 台灣加權指數資料來源:
